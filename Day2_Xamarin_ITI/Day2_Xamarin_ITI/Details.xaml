@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Day2_Xamarin_ITI.Details"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="{Binding Name}"
+                   FontSize="Large"
+                   TextColor="Black"
+                   Margin="12,8,12,6"
+                   ></Label>
+            <Image Source="{Binding Image}" HorizontalOptions="FillAndExpand"></Image>
+            <Label Text="By it for only"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   Margin="12,50,12,4"
+                   HorizontalOptions="Center"
+                   ></Label>
+            <Label Text="{Binding Price}"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   Margin="12,0,12,6"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   ></Label>
+            <Button Clicked="Button_Clicked" BackgroundColor="DeepSkyBlue" Text="Buy" Margin="0,50,0,0"></Button>
+            <Button Clicked="Button_Clicked_1" BackgroundColor="DeepSkyBlue" Text="Back To Menu" Margin="0,10,0,0"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

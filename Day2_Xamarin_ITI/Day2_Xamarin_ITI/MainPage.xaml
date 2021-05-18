@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Day2_Xamarin_ITI.MainPage">
+
+    <StackLayout  BackgroundColor= "SteelBlue">
+        <StackLayout HorizontalOptions="Fill" VerticalOptions="CenterAndExpand" Spacing="30">
+            <Label Text="Welcome to Xamarin"
+                   FontSize="36"
+                   TextColor="White"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Mobile Development Made Easy"
+                   FontSize="16"
+                   TextColor="White"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Clicked="Button_Clicked"  HorizontalOptions="Fill" Text="Login" TextColor="White" BackgroundColor="DeepSkyBlue"></Button>
+            <Button HorizontalOptions="Fill" Text="Register" TextColor="White" BackgroundColor="DeepSkyBlue"></Button>
+
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

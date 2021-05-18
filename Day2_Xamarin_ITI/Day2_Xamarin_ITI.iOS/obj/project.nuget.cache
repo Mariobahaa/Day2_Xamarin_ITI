@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Lh/vEvKrScOIUG8+pBkefJ9LcoVzyRkQlC0a616tUPn8sYslFOmSGXlRDLH32wuqp4VJbHtNWZIR3xq43iPFuw==",
+  "success": true,
+  "projectFilePath": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mario\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
