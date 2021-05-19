@@ -14,25 +14,28 @@ namespace Day2_Xamarin_ITI
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Details : ContentPage
     {
-        public Meal Meal { get; set; }
-        public string _Name { get; set; }
-        public string _Image { get; set; }
-        public decimal _Price { get; set; }
+        //public Meal Meal { get; set; }
+        //public string _Name { get; set; }
+        //public string _Image { get; set; }
+        //public decimal _Price { get; set; }
         
-        public Details() { Meal = null; InitializeComponent(); }
-
-        public Details(String _name, string _image, decimal _price)
-        {
-            _Name = _name; _Image = _image; _Price = _price;
-            Meal = new Meal() { Name = _name, Image = _image, Price = _price };
-            BindingContext = Meal;
-            InitializeComponent();
+        public Details() {  InitializeComponent(); 
+            if(BindingContext!=null)
+            DisplayAlert((BindingContext as Meal).Name, (BindingContext as Meal).Name, (BindingContext as Meal).Name);  
         }
-        public Details(Meal _meal =null )
+
+        //public Details(String _name, string _image, decimal _price)
+        //{
+        //    _Name = _name; _Image = _image; _Price = _price;
+        //    Meal = new Meal() { Name = _name, Image = _image, Price = _price };
+        //    //BindingContext = Meal;
+        //    InitializeComponent();
+        //}
+        public Details(Meal _meal = null)
         {
-            Meal = _meal;
-            BindingContext = Meal;
+            //Meal = _meal;
             InitializeComponent();
+            BindingContext = _meal;
         }
 
         public void Button_Clicked(object sender, EventArgs e)

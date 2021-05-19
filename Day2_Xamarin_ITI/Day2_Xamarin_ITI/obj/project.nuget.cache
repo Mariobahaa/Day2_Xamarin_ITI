@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8q06bjnLlX+1MIkrkCHbOz0ps4W1+ULWLf8SUBrEOymkd3Dq9IOpxKvVk2spxg0emT9w+vMqB53gSieahxkxaA==",
+  "dgSpecHash": "DiTjKAdgIQeX5ZBD4tgnnNvZLYRCA0S88tM7zUayfUO27o7so4BDqLUXVXO0HS6LB/4zV+TkfQ9UGYb8I+3/oA==",
   "success": true,
-  "projectFilePath": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj",
+  "projectFilePath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

@@ -3,17 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Day2_Xamarin_ITI.Gallery"
              xmlns:local="clr-namespace:Day2_Xamarin_ITI"
-             >
-    <local:Details>
-        <x:Arguments>
+             x:Name="crs">
+    <CarouselPage.ItemTemplate>
+        <DataTemplate>
+    
+            <local:Details BindingContext="{Binding .}"> 
+        <!--<x:Arguments>
             <x:String>Pizza</x:String>
             <x:String>Pizza.jpg</x:String>
             <x:Decimal>80</x:Decimal>
 
-        </x:Arguments>
-    </local:Details>
+        </x:Arguments>-->
+            </local:Details>
 
-    <local:Details>
+    <!--<local:Details>
         <x:Arguments>
             <x:String>Chicken</x:String>
             <x:String>Chicken.jpg</x:String>
@@ -37,6 +40,7 @@
             <x:Decimal>25</x:Decimal>
 
         </x:Arguments>
-    </local:Details>
-   
+    </local:Details>-->
+        </DataTemplate>
+    </CarouselPage.ItemTemplate>
 </CarouselPage>

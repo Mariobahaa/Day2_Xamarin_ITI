@@ -2149,11 +2149,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.Android\\Day2_Xamarin_ITI.Android.csproj",
+      "projectUniqueName": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.Android\\Day2_Xamarin_ITI.Android.csproj",
       "projectName": "Day2_Xamarin_ITI.Android",
-      "projectPath": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.Android\\Day2_Xamarin_ITI.Android.csproj",
+      "projectPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.Android\\Day2_Xamarin_ITI.Android.csproj",
       "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
-      "outputPath": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.Android\\obj\\",
+      "outputPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2176,8 +2176,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj": {
-              "projectPath": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj"
+            "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj": {
+              "projectPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj"
             }
           }
         }

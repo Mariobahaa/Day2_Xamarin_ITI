@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EXR5Fasq0musb68AEqdCQ7TM2gWNnQyGrdU+mqXByuXFP7Xq6CCPxuexWejTqQAhZqFZLdXya3lYfG0bCjK67A==",
+  "dgSpecHash": "QvMOyf7kPlkxhq+gFghWFKGikRdrV6nU4vB2R2mD+pOPfgTefiYHJ3vRNIi0TU1ztWuWx3/z+Ers2d6Z3oSEhw==",
   "success": true,
-  "projectFilePath": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.Android\\Day2_Xamarin_ITI.Android.csproj",
+  "projectFilePath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.Android\\Day2_Xamarin_ITI.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mario\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",

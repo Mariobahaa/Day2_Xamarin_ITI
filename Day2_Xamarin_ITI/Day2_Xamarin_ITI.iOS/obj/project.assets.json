@@ -998,11 +998,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj",
+      "projectUniqueName": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj",
       "projectName": "Day2_Xamarin_ITI.iOS",
-      "projectPath": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj",
+      "projectPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj",
       "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
-      "outputPath": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\obj\\",
+      "outputPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1025,8 +1025,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj": {
-              "projectPath": "E:\\My Programs\\ITIC#\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj"
+            "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj": {
+              "projectPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj"
             }
           }
         }

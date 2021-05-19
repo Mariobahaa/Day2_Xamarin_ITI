@@ -17,8 +17,12 @@ namespace Day2_Xamarin_ITI {
     public partial class Gallery : global::Xamarin.Forms.CarouselPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.CarouselPage crs;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Gallery));
+            crs = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.CarouselPage>(this, "crs");
         }
     }
 }
