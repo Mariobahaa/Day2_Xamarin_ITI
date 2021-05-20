@@ -1,4 +1,6 @@
-﻿using Day2_Xamarin_ITI.Models;
+﻿using Day2_Xamarin_ITI.DB;
+using Day2_Xamarin_ITI.Models;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,20 +17,34 @@ namespace Day2_Xamarin_ITI
     public partial class Gallery : CarouselPage
     {
         public ObservableCollection<Meal> Meals;
+        private SQLiteAsyncConnection Con;
+
+        async protected override void OnAppearing()
+        {
+
+
+
+            //Create table if not exist and retreive its data in Meals
+            await Con.CreateTableAsync<Meal>();
+            var mealDB = await Con.Table<Meal>().ToListAsync();
+            Meals = new ObservableCollection<Meal>(mealDB);
+
+            // await Con.InsertAsync(new Meal() { Name = "Pizza", Image = "Pizza.jpg", Price = 80M });
+            crs.ItemsSource = Meals;
+
+            base.OnAppearing();
+        }
 
         public Gallery()
         {
             InitializeComponent();
 
-            BindingContext = this;
-            Meals = new ObservableCollection<Meal>()
-        {
-            new Meal(){Name= "Pizza", Image= "Pizza.jpg", Price= 80M },
-            new Meal(){Name= "Chicken", Image= "Chicken.jpg", Price= 65M },
-            new Meal(){Name= "Kabab", Image= "Kabab.jpg", Price= 140M },
-            new Meal(){Name= "Koshary", Image= "Koshary.jpg", Price= 25M }
+            Con = DependencyService.Get<ISQLiteDb>().GetConnection();
 
-        };
+
+            BindingContext = this;
+            Meals = new ObservableCollection<Meal>();
+        
 
             
             crs.ItemsSource = Meals;
