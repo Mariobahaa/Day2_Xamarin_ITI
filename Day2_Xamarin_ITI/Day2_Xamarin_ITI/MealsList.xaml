@@ -4,7 +4,7 @@
              x:Class="Day2_Xamarin_ITI.MealsList"
               NavigationPage.HasNavigationBar="False">
     <ContentPage.ToolbarItems >
-        <ToolbarItem Text="Create+" > </ToolbarItem>
+        <ToolbarItem Text="Create+" Clicked="Create_Clicked" > </ToolbarItem>
 
     </ContentPage.ToolbarItems>
     <ContentPage.Content>

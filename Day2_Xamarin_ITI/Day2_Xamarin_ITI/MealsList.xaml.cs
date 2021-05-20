@@ -19,18 +19,25 @@ namespace Day2_Xamarin_ITI
         public ObservableCollection<Meal> Meals;
         private SQLiteAsyncConnection Con;
 
-        async protected override void OnAppearing()
+        async private void LoadfromDB()
         {
-            
-            
 
-            //Create table if not exist and retreive its data in Meals
             await Con.CreateTableAsync<Meal>();
+
+            
             var mealDB = await Con.Table<Meal>().ToListAsync();
             Meals = new ObservableCollection<Meal>(mealDB);
 
-           // await Con.InsertAsync(new Meal() { Name = "Pizza", Image = "Pizza.jpg", Price = 80M });
+
+
+            // await Con.InsertAsync(new Meal() { Name = "Pizza", Image = "Pizza.jpg", Price = 80M });
             lst.ItemsSource = Meals;
+        }
+        async protected override void OnAppearing()
+        {
+
+            //Create table if not exist and retreive its data in Meals
+            LoadfromDB();
 
             base.OnAppearing();
         }
@@ -60,16 +67,25 @@ namespace Day2_Xamarin_ITI
             lst.SelectedItem = null;
         }
 
-        private void Update_Clicked(object sender, EventArgs e)
+        async private void Update_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Update", "Update", "OK");
+            await Navigation.PushAsync(new UpdatePage() { BindingContext = ((sender as Button).Parent.BindingContext as Meal) });
+            LoadfromDB();
+
 
         }
 
-        private void Delete_Clicked(object sender, EventArgs e)
+        async private void Delete_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Delete", "Delete", "OK");
+           // DisplayAlert( (sender as Meal).Name, (sender as Meal).Name, "ok");
+            await Navigation.PushAsync(new DeletePage() { BindingContext=((sender as Button).Parent.BindingContext as Meal)});
+            LoadfromDB();
 
+        }
+        async private void  Create_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CreatePage());
+            LoadfromDB();
         }
     }
 }
