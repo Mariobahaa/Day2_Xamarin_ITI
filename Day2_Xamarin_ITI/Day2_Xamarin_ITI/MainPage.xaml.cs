@@ -17,7 +17,15 @@ namespace Day2_Xamarin_ITI
 
         async private void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NavigationPage(new Menu()));
+            // await Navigation.PushAsync(new NavigationPage(new Menu()));
+            await Navigation.PushAsync(new NavigationPage(new Login()));
+
+        }
+
+        async private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NavigationPage(new Register()));
+
         }
     }
 }

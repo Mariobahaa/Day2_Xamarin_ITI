@@ -8,7 +8,7 @@
             <Entry Text="{Binding Name}" Placeholder="Name of Dish"></Entry>
             <Entry Text="{Binding Image}" Placeholder="Image File Name"></Entry>
             <Entry Text="{Binding Price}" Keyboard="Numeric" Placeholder="Price"></Entry>
-            <Button Clicked="Button_Clicked"></Button>
+            <Button Clicked="Button_Clicked" Text="Delete" BackgroundColor="Red"></Button>
 
         </StackLayout>
     </ContentPage.Content>
