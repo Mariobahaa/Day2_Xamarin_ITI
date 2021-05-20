@@ -3,11 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Day2_Xamarin_ITI.MealsList"
               NavigationPage.HasNavigationBar="False">
+    <ContentPage.ToolbarItems >
+        <ToolbarItem Text="Create+" > </ToolbarItem>
+
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <ListView x:Name="lst" HasUnevenRows="True" ItemTapped="lst_ItemTapped">
+        <ListView x:Name="lst" HasUnevenRows="True" ItemTapped="lst_ItemTapped" SeparatorColor="DeepSkyBlue">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ImageCell Text="{Binding Name}" ImageSource="{Binding Image}" Detail="{Binding  Price}"></ImageCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10" >
+                            <Image Source="{Binding Image}" HeightRequest="40" WidthRequest="100"></Image>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Name}"></Label>
+                                <Label Text="{Binding Price}" TextColor="DeepSkyBlue"></Label>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Button Clicked="Update_Clicked" BackgroundColor="DeepSkyBlue" TextColor="White" Text="Update"></Button>
+                                <Button Clicked= "Delete_Clicked" BackgroundColor="Red" TextColor="White" Text="Delete"></Button>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                    <!--<ImageCell Text="{Binding Name}" ImageSource="{Binding Image}" Detail="{Binding  Price}"></ImageCell>-->
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

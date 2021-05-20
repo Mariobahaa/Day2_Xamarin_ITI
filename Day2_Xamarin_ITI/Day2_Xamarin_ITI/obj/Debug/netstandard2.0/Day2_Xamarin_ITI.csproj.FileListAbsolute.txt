@@ -20,7 +20,6 @@ E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\bin\Debu
 E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\bin\Debug\netstandard2.0\Day2_Xamarin_ITI.dll
 E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\bin\Debug\netstandard2.0\ref\Day2_Xamarin_ITI.dll
 E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\bin\Debug\netstandard2.0\Day2_Xamarin_ITI.pdb
-E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\obj\Debug\netstandard2.0\Day2_Xamarin_ITI.csprojAssemblyReference.cache
 E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\obj\Debug\netstandard2.0\App.xaml.g.cs
 E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\obj\Debug\netstandard2.0\Details.xaml.g.cs
 E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\obj\Debug\netstandard2.0\Gallery.xaml.g.cs
@@ -34,3 +33,4 @@ E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\obj\Debu
 E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\obj\Debug\netstandard2.0\Day2_Xamarin_ITI.dll
 E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\obj\Debug\netstandard2.0\ref\Day2_Xamarin_ITI.dll
 E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\obj\Debug\netstandard2.0\Day2_Xamarin_ITI.pdb
+E:\My Programs\ITIC#\Day3_Xamarin_ITI\Day2_Xamarin_ITI\Day2_Xamarin_ITI\obj\Debug\netstandard2.0\Day2_Xamarin_ITI.csprojAssemblyReference.cache

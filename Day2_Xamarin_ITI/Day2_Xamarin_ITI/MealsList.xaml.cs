@@ -1,4 +1,6 @@
-﻿using Day2_Xamarin_ITI.Models;
+﻿using Day2_Xamarin_ITI.DB;
+using Day2_Xamarin_ITI.Models;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,28 +17,59 @@ namespace Day2_Xamarin_ITI
     public partial class MealsList : ContentPage
     {
         public ObservableCollection<Meal> Meals;
+        private SQLiteAsyncConnection Con;
+
+        async protected override void OnAppearing()
+        {
+            
+            
+
+            //Create table if not exist and retreive its data in Meals
+            await Con.CreateTableAsync<Meal>();
+            var mealDB = await Con.Table<Meal>().ToListAsync();
+            Meals = new ObservableCollection<Meal>(mealDB);
+
+           // await Con.InsertAsync(new Meal() { Name = "Pizza", Image = "Pizza.jpg", Price = 80M });
+            lst.ItemsSource = Meals;
+
+            base.OnAppearing();
+        }
         public MealsList()
         {
             InitializeComponent();
+            Con = DependencyService.Get<ISQLiteDb>().GetConnection();
 
-            Meals = new ObservableCollection<Meal>()
-        {
-            new Meal(){Name= "Pizza", Image= "Pizza.jpg", Price= 80M },
-            new Meal(){Name= "Chicken", Image= "Chicken.jpg", Price= 65M },
-            new Meal(){Name= "Kabab", Image= "Kabab.jpg", Price= 140M },
-            new Meal(){Name= "Koshary", Image= "Koshary.jpg", Price= 25M }
 
-        };
+            Meals = new ObservableCollection<Meal>();
+        //{
+        //    new Meal(){Name= "Pizza", Image= "Pizza.jpg", Price= 80M },
+        //    new Meal(){Name= "Chicken", Image= "Chicken.jpg", Price= 65M },
+        //    new Meal(){Name= "Kabab", Image= "Kabab.jpg", Price= 140M },
+        //    new Meal(){Name= "Koshary", Image= "Koshary.jpg", Price= 25M }
+
+        //};
 
             lst.ItemsSource = Meals;
         }
 
-        async private void lst_ItemTapped(object sender, ItemTappedEventArgs e)
+        async private void lst_ItemTapped(object sender, ItemTappedEventArgs e)//prob?
         {
             if ((sender as ListView).SelectedItem == null) return;
             var meal = ((sender as ListView).SelectedItem as Meal);
             await Navigation.PushAsync(new Details(meal));
             lst.SelectedItem = null;
+        }
+
+        private void Update_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Update", "Update", "OK");
+
+        }
+
+        private void Delete_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Delete", "Delete", "OK");
+
         }
     }
 }
