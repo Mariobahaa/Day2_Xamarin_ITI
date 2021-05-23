@@ -10,14 +10,18 @@
                    TextColor="Black"
                    Margin="12,8,12,6"
                    ></Label>
-            <Image Source="{Binding Image}" HorizontalOptions="FillAndExpand"></Image>
-            <Label Text="By it for only"
+            <Label Text="{Binding ShirtNumber}"
+                   FontSize="Large"
+                   TextColor="Black"
+                   Margin="12,8,12,6"
+                   ></Label>
+            <Label Text="Plays for team with Id:"
                    FontSize="Medium"
                    TextColor="Black"
                    Margin="12,50,12,4"
                    HorizontalOptions="Center"
                    ></Label>
-            <Label Text="{Binding Price}"
+            <Label Text="{Binding ClubId}"
                    FontSize="Medium"
                    TextColor="Black"
                    Margin="12,0,12,6"

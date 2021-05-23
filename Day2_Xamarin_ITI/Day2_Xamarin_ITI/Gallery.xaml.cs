@@ -1,10 +1,12 @@
 ﻿using Day2_Xamarin_ITI.DB;
 using Day2_Xamarin_ITI.Models;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,8 +18,10 @@ namespace Day2_Xamarin_ITI
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Gallery : CarouselPage
     {
-        public ObservableCollection<Meal> Meals;
-        private SQLiteAsyncConnection Con;
+        public ObservableCollection<Player> Meals;
+        //private SQLiteAsyncConnection Con;
+        private HttpClient Client = new HttpClient();
+        private String url = "https://localhost:4321/api/Players/";
 
         async protected override void OnAppearing()
         {
@@ -25,9 +29,10 @@ namespace Day2_Xamarin_ITI
 
 
             //Create table if not exist and retreive its data in Meals
-            await Con.CreateTableAsync<Meal>();
-            var mealDB = await Con.Table<Meal>().ToListAsync();
-            Meals = new ObservableCollection<Meal>(mealDB);
+            var players = await Client.GetStringAsync(url);
+            var conv = JsonConvert.DeserializeObject<List<Player>>(players);
+
+            Meals = new ObservableCollection<Player>(conv);
 
             // await Con.InsertAsync(new Meal() { Name = "Pizza", Image = "Pizza.jpg", Price = 80M });
             crs.ItemsSource = Meals;
@@ -39,11 +44,11 @@ namespace Day2_Xamarin_ITI
         {
             InitializeComponent();
 
-            Con = DependencyService.Get<ISQLiteDb>().GetConnection();
-
+            //Con = DependencyService.Get<ISQLiteDb>().GetConnection();
+            Client = new HttpClient();
 
             BindingContext = this;
-            Meals = new ObservableCollection<Meal>();
+            Meals = new ObservableCollection<Player>();
         
 
             

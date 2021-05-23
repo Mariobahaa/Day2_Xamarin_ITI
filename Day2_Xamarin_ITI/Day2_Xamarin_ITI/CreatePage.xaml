@@ -5,9 +5,9 @@
             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout >
-            <Entry x:Name="nm" Placeholder="Name of Dish"></Entry>
-            <Entry x:Name="im" Placeholder="Image File Name"></Entry>
-            <Entry x:Name="pr" Keyboard="Numeric" Placeholder="Price"></Entry>
+            <Entry x:Name="nm" Placeholder="Name"></Entry>
+            <Entry x:Name="im" Placeholder="Shirt Number"></Entry>
+            <Entry x:Name="pr" Keyboard="Numeric" Placeholder="Club Id"></Entry>
             <Button Clicked="Button_Clicked" Text="Create" BackgroundColor="Green"></Button>
 
         </StackLayout>

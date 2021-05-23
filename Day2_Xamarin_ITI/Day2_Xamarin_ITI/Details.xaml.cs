@@ -21,7 +21,7 @@ namespace Day2_Xamarin_ITI
         
         public Details() {  InitializeComponent(); 
             if(BindingContext!=null)
-            DisplayAlert((BindingContext as Meal).Name, (BindingContext as Meal).Name, (BindingContext as Meal).Name);  
+            DisplayAlert((BindingContext as Player).Name, (BindingContext as Player).Name, (BindingContext as Player).Name);  
         }
 
         //public Details(String _name, string _image, decimal _price)
@@ -31,7 +31,7 @@ namespace Day2_Xamarin_ITI
         //    //BindingContext = Meal;
         //    InitializeComponent();
         //}
-        public Details(Meal _meal = null)
+        public Details(Player _meal = null)
         {
             //Meal = _meal;
             InitializeComponent();

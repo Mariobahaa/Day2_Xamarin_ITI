@@ -5,9 +5,9 @@
             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="{Binding Name}" Placeholder="Name of Dish"></Entry>
-            <Entry Text="{Binding Image}" Placeholder="Image File Name"></Entry>
-            <Entry Text="{Binding Price}" Keyboard="Numeric" Placeholder="Price"></Entry>
+            <Entry Text="{Binding Name}" Placeholder="Name"></Entry>
+            <Entry Text="{Binding ShirtNumber}"  Keyboard="Numeric" Placeholder="Shirt"></Entry>
+            <Entry Text="{Binding ClubId}" Keyboard="Numeric" Placeholder="Club Id"></Entry>
             <Button Clicked="Button_Clicked" Text="Update" BackgroundColor="DeepSkyBlue"></Button>
 
         </StackLayout>

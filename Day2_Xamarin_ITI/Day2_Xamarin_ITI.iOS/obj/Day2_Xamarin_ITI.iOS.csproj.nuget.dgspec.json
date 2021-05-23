@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj": {}
+    "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj": {}
   },
   "projects": {
-    "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj": {
+    "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj",
+        "projectUniqueName": "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj",
         "projectName": "Day2_Xamarin_ITI.iOS",
-        "projectPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj",
+        "projectPath": "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\Day2_Xamarin_ITI.iOS.csproj",
         "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
-        "outputPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\obj\\",
+        "outputPath": "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj": {
-                "projectPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj"
+              "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj": {
+                "projectPath": "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj": {
+    "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj",
+        "projectUniqueName": "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj",
         "projectName": "Day2_Xamarin_ITI",
-        "projectPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj",
+        "projectPath": "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI.csproj",
         "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
-        "outputPath": "E:\\My Programs\\ITIC#\\Day3_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\obj\\",
+        "outputPath": "E:\\My Programs\\ITIC#\\Day4_Xamarin_ITI\\Day2_Xamarin_ITI\\Day2_Xamarin_ITI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -109,11 +109,19 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.Net.Http": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
